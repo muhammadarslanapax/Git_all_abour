@@ -1,0 +1,186 @@
+git for chck
+
+clear for clear 
+ pwd presend working directory
+
+git config user.naem ""
+
+
+ git config --global user.name "your_github_username"
+ git config --global user.email "your_github_username"
+
+git config --list
+
+---------------
+
+make folder as a git directory
+
+git init
+
+views/hidden files
+
+git is changeing tracking tool or git is record tracking tool 
+auto track config some files 
+responsible to trck of changings 
+
+git status check status 
+
+
+three state articheter :
+
+
+working dir
+staging area
+git dir repo
+
+----------------
+
+staging area
+git add --a
+comment 
+git commit -m "mycommit"     //finalize
+
+code .     //open folder
+
+changes update
+git add --a 
+git commit -m "commit"
+
+
+master is default brance
+
+git log    // check all commits
+Author: arslan <arslan1122>
+Date:   Thu Feb 23 00:49:42 2023 +0500
+
+    ui approve
+
+commit 57c802a48c25f344538bc085d533bfaeca9a4007
+Author: arslan <arslan1122>
+Date:   Thu Feb 23 00:45:30 2023 +0500
+
+    first commit
+
+
+
+----------------------------------------
+clone a remote git repo from github
+github 
+code/https path copy/
+go to folder and git bash
+
+git clone url
+
+ls for check files
+
+cd   // auto compleate 
+
+
+
+--------------------------------
+git ignore
+make
+
+ 
+.getignore file/
+
+file.log   // file name 
+
+------------------------
+
+git init   // responsible for handal 
+first time files are untrack
+git add --a or git add .a  // staging area   // show unmodified status 
+edit file that is add    // show  modify files 
+--------------------------
+
+git diff 
+compare working with stage directorey
+
+git diff --staged   // last commit compare 
+----------------------------------
+skip staging area and commit
+git commit -a -m ""
+
+remember staging and untrack not work 
+
+----------------------
+add file to un add file 
+or 
+staged to un staged 
+
+git restore --staged file.txt
+
+
+restore changes 
+last commit
+
+git restore file.txt
+
+
+all files git checkout -f
+
+git checkput file.txt
+
+------------------------
+renaming and moving 
+1)rename 
+git add .
+git status
+
+or 
+git mv fileold.txt filenew.txt   //working to staginh 
+----
+delete 
+git rm file.txt   //delete and commint 
+
+git rm --cached file.txt    //stoe and eidt id .gitignore   
+
+-----------------------------------------------
+
+working at remotly repo
+make repo on github
+git remote add origin path/url
+git push origin main
+
+-----
+create ssh :
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+clip < ~/.ssh/id_ed25519.pub
+------------
+branches 
+for multipe developers
+ git checkout  name
+
+switch
+git checkout name
+   git push origin name
+
+-------
+check brancles 
+git branch
+-------------
+
+marge a branch
+git main name
+and 
+git pull origin main
+for local 
+---------------
+push remotly
+
+git remote -v
+-------
+git pull origin main
+
+--------
+git config --global alias.s status
+
+
+
